@@ -1,0 +1,35 @@
+//*****************
+//MEDIA QUERIES
+//*****************
+
+@mixin mediaQueryLaptop {
+    @media (max-width: #{$breakpointLaptop}){
+        @content;
+    }
+}
+@mixin mediaQueryTablet {
+    @media (max-width: #{$breakpointTablet}){
+        @content;
+    }
+}
+@mixin mediaQueryMobile {
+    @media (max-width: #{$breakpointMobile}){
+        @content;
+    }
+}
+
+//*****************
+//FONTS
+//*****************
+
+@mixin font_title($font-size) {
+    font-family: 'Pacifico', cursive;
+    font-size: $font-size;
+    font-weight: 400;
+}
+@mixin font_text($font-size) {
+    font-family: 'Crimson Text', serif;
+    font-size: $font-size;
+    font-weight: 400;
+
+}

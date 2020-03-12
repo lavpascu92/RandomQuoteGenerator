@@ -1,0 +1,219 @@
+@import "_partials/resets";
+@import "_partials/variables";
+@import "_partials/mixins";
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Pacifico&display=swap');
+
+body{
+    scroll-behavior: smooth;
+    position: relative;
+    background-color: $color_carminePink;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include mediaQueryTablet{
+        display: block;
+    }
+}
+
+section#left{
+    background-color: $color_seagreen;
+    clip-path: polygon(75% 0, 100% 53%, 75% 100%, 0% 100%, 0 6%, 0% 0%);
+    color:$color_carminePinkDark;
+    text-shadow: 3px 3px 3px rgba(150, 150, 150, 0.75);
+    
+    
+    h1{
+        @include font_title($font_XXXL);
+        margin-left: 10%;
+        margin-top: 100px;
+        @include mediaQueryLaptop{
+            font-size: $font_XXL;
+        }
+        @include mediaQueryTablet{
+            font-size: $font_L;
+        }
+       
+    }
+    h2{
+        @include font_title($font_XXXL);
+        margin-left: 20%;
+        margin-top: 30px;
+        @include mediaQueryLaptop{
+            font-size: $font_XXL;
+        }
+        @include mediaQueryTablet{
+            font-size: $font_L;
+        }
+        
+    }
+    h3{
+        @include font_title($font_XXXL);
+        margin-left: 25%;
+        margin-top: 30px;
+        @include mediaQueryLaptop{
+            font-size: $font_XXL;
+        }
+        @include mediaQueryTablet{
+            font-size: $font_L;
+        }
+        
+    }
+}
+
+section#right{
+    width: 70%;
+    margin: 30% auto;
+    @include mediaQueryLaptop{
+        width: 90%;
+        margin: 20% auto;
+    }
+    @include mediaQueryTablet{
+        width: 75%;
+    }
+    div#container{
+       background-color: $color_amazon;
+       padding: 40px;
+       border-radius: 20px;
+       color: $color_topaz;
+       transition: all 0.2s ease-in-out;
+       p#quote{
+        @include font_text($font_M);
+        text-align: center;
+        line-height: 2.2rem;
+            @include mediaQueryLaptop{
+                font-size: $font_S;
+                line-height: 1.8rem;
+            }
+            @include mediaQueryTablet{
+                font-size: $font_XS;
+                line-height: 1.8rem;
+            }
+       }
+       p#quote::before{
+           content: open-quote;
+           font-size: 3.2rem;
+           line-height: 0.4rem;
+           @include mediaQueryTablet{
+               font-size: 2.2rem;
+               line-height: 0.2rem;
+           }
+       }
+       p#quote::after{
+           content: close-quote;
+           font-size: 3.2rem;
+           line-height: 1.5rem;
+           @include mediaQueryTablet{
+            line-height: 0.6rem;
+            font-size: 2.2rem;
+        }
+       }
+       p#author{
+           float: right;
+           @include font_text($font_S);
+           @include mediaQueryTablet{
+            font-size: $font_XS;
+        }
+
+       }
+       div#small_container{
+           margin-top: 35px;
+           clear: both;
+           a#twitter{
+               color: $color_topaz;
+               margin: 10px;
+               transition: all 0.2s ease-in-out;
+               @include mediaQueryLaptop{
+                font-size: 0.75rem;
+                margin: 8px;
+               }
+                @include mediaQueryTablet{
+                    font-size: 0.5rem;
+                    margin: 6px;
+                }
+               &:hover{
+                   font-size: 1.2rem;
+                   color: $color_seagreen;
+                   @include mediaQueryLaptop{
+                    font-size: 1rem;
+                }
+                @include mediaQueryTablet{
+                    font-size: 0.75rem;
+                }
+               }
+           }
+           a#facebook{
+            color: $color_topaz;
+            margin: 10px;
+            transition: all 0.2s ease-in-out;
+                @include mediaQueryLaptop{
+                    font-size: 0.75rem;
+                    margin: 8px;
+                }
+                @include mediaQueryTablet{
+                    font-size: 0.5rem;
+                    margin: 6px;
+                }
+                &:hover{
+                    font-size: 1.2rem;
+                    color: $color_seagreen;
+                    @include mediaQueryLaptop{
+                        font-size: 1rem;
+                    }
+                    @include mediaQueryTablet{
+                        font-size: 0.75rem;
+                    }
+                }
+           }
+           a#new_quote_btn{
+               float: right;
+               padding: 9px 25px;
+               border-radius: 10px;
+               background-color: $color_topaz;
+               color: $color_amazon;
+               text-decoration: none;
+               @include font_text($font_M);
+               transition: all 0.2s ease-in-out;
+               @include mediaQueryLaptop{
+                font-size: 0.75rem;
+                margin: 8px;
+               }
+                @include mediaQueryTablet{
+                    font-size: 0.5rem;
+                    margin: 6px;
+                    text-transform: uppercase;
+                }
+               &:hover{
+                   font-size: 1.7rem;
+                   color: $color_topaz;
+                   background-color: $color_seagreen;
+                   @include mediaQueryLaptop{
+                    font-size: 1rem;
+                   }
+                    @include mediaQueryTablet{
+                        font-size: 0.75rem;
+                       
+                    }
+               }
+           }
+       }
+    }
+    footer{
+        margin-top: 4%;
+        margin-left: 20%;
+        @include font_text($font_XS);
+        color: $color_amazon;
+        font-weight: 600;
+        a{
+            color: $color_topaz;
+            text-decoration: none;
+            cursor: pointer;
+            &:hover{
+                color: $color_carminePinkDark;
+            }
+        }
+    }
+}
