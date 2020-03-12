@@ -22,8 +22,8 @@ main{
 section#left{
     background-color: $color_seagreen;
     clip-path: polygon(75% 0, 100% 53%, 75% 100%, 0% 100%, 0 6%, 0% 0%);
-    color:$color_carminePinkDark;
-    text-shadow: 3px 3px 3px rgba(150, 150, 150, 0.75);
+    color:$color_tumbleweed;
+    // text-shadow: 3px 3px 3px rgba(150, 150, 150, 0.75);
     
     
     h1{
@@ -203,7 +203,7 @@ section#right{
     }
     footer{
         margin-top: 4%;
-        margin-left: 20%;
+        margin-left: 24%;
         @include font_text($font_XS);
         color: $color_amazon;
         font-weight: 600;

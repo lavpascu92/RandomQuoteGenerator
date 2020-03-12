@@ -32,8 +32,7 @@ section#left {
   background-color: #7fb685;
   -webkit-clip-path: polygon(75% 0, 100% 53%, 75% 100%, 0% 100%, 0 6%, 0% 0%);
           clip-path: polygon(75% 0, 100% 53%, 75% 100%, 0% 100%, 0 6%, 0% 0%);
-  color: #EF4340;
-  text-shadow: 3px 3px 3px rgba(150, 150, 150, 0.75);
+  color: #f5c67a;
 }
 
 section#left h1 {
@@ -314,7 +313,7 @@ section#right div#container div#small_container a#new_quote_btn:hover {
 
 section#right footer {
   margin-top: 4%;
-  margin-left: 20%;
+  margin-left: 24%;
   font-family: 'Crimson Text', serif;
   font-size: 0.9rem;
   font-weight: 400;
