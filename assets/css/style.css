@@ -226,47 +226,9 @@ section#right div#container div#small_container a#twitter:hover {
   }
 }
 
-section#right div#container div#small_container a#facebook {
-  color: #f2c57c;
-  margin: 10px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-@media (max-width: 1075px) {
-  section#right div#container div#small_container a#facebook {
-    font-size: 0.75rem;
-    margin: 8px;
-  }
-}
-
-@media (max-width: 708px) {
-  section#right div#container div#small_container a#facebook {
-    font-size: 0.5rem;
-    margin: 6px;
-  }
-}
-
-section#right div#container div#small_container a#facebook:hover {
-  font-size: 1.2rem;
-  color: #7fb685;
-}
-
-@media (max-width: 1075px) {
-  section#right div#container div#small_container a#facebook:hover {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 708px) {
-  section#right div#container div#small_container a#facebook:hover {
-    font-size: 0.75rem;
-  }
-}
-
 section#right div#container div#small_container a#new_quote_btn {
   float: right;
-  padding: 9px 25px;
+  padding: 6px 25px;
   border-radius: 10px;
   background-color: #f2c57c;
   color: #426a5a;
@@ -313,7 +275,7 @@ section#right div#container div#small_container a#new_quote_btn:hover {
 
 section#right footer {
   margin-top: 4%;
-  margin-left: 24%;
+  margin-left: 21%;
   font-family: 'Crimson Text', serif;
   font-size: 0.9rem;
   font-weight: 400;

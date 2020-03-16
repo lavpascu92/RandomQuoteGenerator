@@ -145,32 +145,9 @@ section#right{
                 }
                }
            }
-           a#facebook{
-            color: $color_topaz;
-            margin: 10px;
-            transition: all 0.2s ease-in-out;
-                @include mediaQueryLaptop{
-                    font-size: 0.75rem;
-                    margin: 8px;
-                }
-                @include mediaQueryTablet{
-                    font-size: 0.5rem;
-                    margin: 6px;
-                }
-                &:hover{
-                    font-size: 1.2rem;
-                    color: $color_seagreen;
-                    @include mediaQueryLaptop{
-                        font-size: 1rem;
-                    }
-                    @include mediaQueryTablet{
-                        font-size: 0.75rem;
-                    }
-                }
-           }
            a#new_quote_btn{
                float: right;
-               padding: 9px 25px;
+               padding: 6px 25px;
                border-radius: 10px;
                background-color: $color_topaz;
                color: $color_amazon;
@@ -203,7 +180,7 @@ section#right{
     }
     footer{
         margin-top: 4%;
-        margin-left: 24%;
+        margin-left: 21%;
         @include font_text($font_XS);
         color: $color_amazon;
         font-weight: 600;
