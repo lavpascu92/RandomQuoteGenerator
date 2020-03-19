@@ -1,24 +1,36 @@
 
 $(document).ready(function(){
-  
-    var author;
-    var quote;
-   
-    $.get("https://oasis-ribbon-mask.glitch.me").done(function (response) {
-        author = response[0]["author"];
-        quote = response[0]["quote"];
-
-        $("#quote").text(quote);
-        $("#author").text(" - " + author);
-        $("#new_quote_btn").on("click", newQuote(response));
-        $("#twitter").on("click", function(event){
-            event.preventDefault();
+    var quote = '';
+    var author = '';
+    //GET Quote on first load from API
+    $.getJSON("http://quotes.stormconsultancy.co.uk/random.json").done(function(response)
+    {
+        quote = response["quote"];
+        author = response["author"];
+        $("#quote").text(quote).hide().fadeIn(1500);
+        $("#author").text(" - " + author).hide().fadeIn(1500);
+        $("#twitter").off().on("click", function(event)
+        {
+             event.preventDefault();
             window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(quote + " - " + author));
         });
     });
-   
-    function newQuote(response){
-        $("#quote").text(quote);
-        $("#author").text(" - " + author);
-    };
+    //GET Quote from API when button is clicked
+    $("#new_quote_btn").on("click", function()
+    {
+        $.getJSON("http://quotes.stormconsultancy.co.uk/random.json").done(function(response)
+        {
+            quote = response["quote"];
+            author = response["author"];
+            $("#quote").text(quote).hide().fadeIn(1500);
+            $("#author").text(" - " + author).hide().fadeIn(1500);
+            $("#twitter").off().on("click", function(event)
+            {
+                event.preventDefault();
+                window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(quote + " - " + author));
+            });
+        });
+    });
 });
+
+

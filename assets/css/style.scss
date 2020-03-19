@@ -145,10 +145,11 @@ section#right{
                 }
                }
            }
-           a#new_quote_btn{
+           button#new_quote_btn{
                float: right;
                padding: 6px 25px;
                border-radius: 10px;
+               border: none;
                background-color: $color_topaz;
                color: $color_amazon;
                text-decoration: none;
@@ -164,6 +165,7 @@ section#right{
                     text-transform: uppercase;
                 }
                &:hover{
+                   cursor: pointer;
                    font-size: 1.7rem;
                    color: $color_topaz;
                    background-color: $color_seagreen;

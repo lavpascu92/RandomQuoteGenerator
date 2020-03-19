@@ -226,10 +226,11 @@ section#right div#container div#small_container a#twitter:hover {
   }
 }
 
-section#right div#container div#small_container a#new_quote_btn {
+section#right div#container div#small_container button#new_quote_btn {
   float: right;
   padding: 6px 25px;
   border-radius: 10px;
+  border: none;
   background-color: #f2c57c;
   color: #426a5a;
   text-decoration: none;
@@ -241,34 +242,35 @@ section#right div#container div#small_container a#new_quote_btn {
 }
 
 @media (max-width: 1075px) {
-  section#right div#container div#small_container a#new_quote_btn {
+  section#right div#container div#small_container button#new_quote_btn {
     font-size: 0.75rem;
     margin: 8px;
   }
 }
 
 @media (max-width: 708px) {
-  section#right div#container div#small_container a#new_quote_btn {
+  section#right div#container div#small_container button#new_quote_btn {
     font-size: 0.5rem;
     margin: 6px;
     text-transform: uppercase;
   }
 }
 
-section#right div#container div#small_container a#new_quote_btn:hover {
+section#right div#container div#small_container button#new_quote_btn:hover {
+  cursor: pointer;
   font-size: 1.7rem;
   color: #f2c57c;
   background-color: #7fb685;
 }
 
 @media (max-width: 1075px) {
-  section#right div#container div#small_container a#new_quote_btn:hover {
+  section#right div#container div#small_container button#new_quote_btn:hover {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 708px) {
-  section#right div#container div#small_container a#new_quote_btn:hover {
+  section#right div#container div#small_container button#new_quote_btn:hover {
     font-size: 0.75rem;
   }
 }
