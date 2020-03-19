@@ -227,6 +227,7 @@ section#right div#container div#small_container a#twitter:hover {
 }
 
 section#right div#container div#small_container button#new_quote_btn {
+  outline: none;
   float: right;
   padding: 6px 25px;
   border-radius: 10px;
