@@ -278,12 +278,19 @@ section#right div#container div#small_container button#new_quote_btn:hover {
 
 section#right footer {
   margin-top: 4%;
-  margin-left: 21%;
+  margin-left: 25%;
   font-family: 'Crimson Text', serif;
   font-size: 0.9rem;
   font-weight: 400;
   color: #426a5a;
   font-weight: 600;
+}
+
+@media (max-width: 400px) {
+  section#right footer {
+    margin-left: 13%;
+    font-size: 0.8rem;
+  }
 }
 
 section#right footer a {

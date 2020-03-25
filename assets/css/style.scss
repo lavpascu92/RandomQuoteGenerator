@@ -183,10 +183,14 @@ section#right{
     }
     footer{
         margin-top: 4%;
-        margin-left: 21%;
+        margin-left: 25%;
         @include font_text($font_XS);
         color: $color_amazon;
         font-weight: 600;
+        @include mediaQueryMobile{
+            margin-left: 13%;
+            font-size: $font_XXS;
+        }
         a{
             color: $color_topaz;
             text-decoration: none;
